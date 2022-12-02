@@ -1,0 +1,62 @@
+---
+title: "My Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{My Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753Fallkhon0000)
+```
+
+
+## ntickets function
+
+```{r}
+ntickets(400,0.02,0.95)
+```
+
+
+
+## mycltb function
+
+```{r}
+mycltb(n=4,iter=10000,p=0.3)
+```
+
+
+
+
+
+## mymlbeta function
+
+```{r}
+mymlbeta(x=rbeta(100,shape1=2,shape2=5),alpha=seq(1,4,length=100),beta=seq(2,8,length=100))
+```
+
+
+
+
+## myboot2 function
+
+```{r}
+myboot2(iter=10000,x=c(1,2,3,4), fun="mean", alpha=1-.95,cx=1)
+```
+
+
+## Saved Data
+
+
+```{r}
+fire
+```
+
